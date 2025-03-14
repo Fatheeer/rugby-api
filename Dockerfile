@@ -3,6 +3,7 @@ FROM rocker/r-ver:4.3.1
 
 # Installer Plumber
 RUN R -e "install.packages('plumber')"
+RUN R -e "install.packages('tidyverse')"
 
 # Copier les fichiers de l'application
 COPY . /app
